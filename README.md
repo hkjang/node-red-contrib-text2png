@@ -31,6 +31,38 @@ return msg;
 
 <a href="https://www.buymeacoffee.com/gagagiga" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
+## Option
+
+``text2png(text, option)``
+
+|param|default|
+|---|---|
+|text|(required)|
+|option.font|'30px sans-serif'|
+|option.textAlign|'left'|
+|option.color (or option.textColor)|'black'|
+|option.backgroundColor (or option.bgColor)|'transparent'|
+|option.lineSpacing|0|
+|option.strokeWidth|0|
+|option.strokeColor|'white'|
+|option.padding|0|
+|option.padding(Left\|Top\|Right\|Bottom)|0|
+|option.borderWidth|0|
+|option.border(Left\|Top\|Right\|Bottom)Width|0|
+|option.borderColor|'black'|
+|option.localFontPath||
+|option.localFontName||
+|option.output|'buffer'|
+
+``option.color = '#000' | 'rgb(0, 0, 0)' | 'black' | ...``
+
+``option.output = 'buffer' | 'stream' | 'dataURL' | 'canvas'``
+
+``option.strokeWidth = 1 | 2 | ... `` A padding may have to be set to avoid cutoff of stroke
+
+``'canvas'`` returns [node-canvas](https://github.com/Automattic/node-canvas) object.
+
+If you want to use any custom fonts without installing, use `localFontPath` and `localFontName` property.
 
 Result 
 -------
