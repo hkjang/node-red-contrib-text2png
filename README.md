@@ -1,4 +1,4 @@
-TEXT to JSON NodeRED Node
+TEXT to PNG NodeRED Node
 =====================
 
 text2png Wrapper 
