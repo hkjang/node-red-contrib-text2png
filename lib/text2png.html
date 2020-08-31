@@ -1,0 +1,27 @@
+<script type="text/javascript">
+    RED.nodes.registerType('text2png',{
+        category: 'function',
+        color: '#DEBD5C',
+        defaults: {
+            name: {value: "Text to PNG"}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "text2png.png",
+        label: function() {
+            return this.name || "Text to PNG";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="text2png">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="text2png">
+    <p>Text found in <b>msg.payload</b> to PNG.</p>
+    <p>Text is saved in the <b>msg.payload</b> property, overriding the PNG. </p>
+</script>
